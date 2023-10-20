@@ -111,7 +111,8 @@
                         <p class="hero__item-text">
                             Citroën Jumper oder Peugeot Boxer 3,5t Light oder 3,5t Heavy Chassis 4-Zylinder Turbodiesel,
                             Euro 6d, Rußpartikelfilter Fahrerairbag
-                            Elektronische Wegfahrsperre, Zentralverriegelung mit Funkfernbedienung Scheibenbremsen vorne und
+                            Elektronische Wegfahrsperre, Zentralverriegelung mit Funkfernbedienung Scheibenbremsen vorne
+                            und
                             hinten...
                             <a href="#" class="hero__item-text-link">Mehr</a>
                         </p>
@@ -188,7 +189,8 @@
                         <p class="hero__item-text">
                             Citroën Jumper oder Peugeot Boxer 3,5t Light oder 3,5t Heavy Chassis 4-Zylinder Turbodiesel,
                             Euro 6d, Rußpartikelfilter Fahrerairbag
-                            Elektronische Wegfahrsperre, Zentralverriegelung mit Funkfernbedienung Scheibenbremsen vorne und
+                            Elektronische Wegfahrsperre, Zentralverriegelung mit Funkfernbedienung Scheibenbremsen vorne
+                            und
                             hinten...
                             <a href="#" class="hero__item-text-link">Mehr</a>
                         </p>
@@ -265,7 +267,8 @@
                         <p class="hero__item-text">
                             Citroën Jumper oder Peugeot Boxer 3,5t Light oder 3,5t Heavy Chassis 4-Zylinder Turbodiesel,
                             Euro 6d, Rußpartikelfilter Fahrerairbag
-                            Elektronische Wegfahrsperre, Zentralverriegelung mit Funkfernbedienung Scheibenbremsen vorne und
+                            Elektronische Wegfahrsperre, Zentralverriegelung mit Funkfernbedienung Scheibenbremsen vorne
+                            und
                             hinten...
                             <a href="#" class="hero__item-text-link">Mehr</a>
                         </p>
@@ -342,32 +345,67 @@
                         <p class="hero__item-text">
                             Citroën Jumper oder Peugeot Boxer 3,5t Light oder 3,5t Heavy Chassis 4-Zylinder Turbodiesel,
                             Euro 6d, Rußpartikelfilter Fahrerairbag
-                            Elektronische Wegfahrsperre, Zentralverriegelung mit Funkfernbedienung Scheibenbremsen vorne und
+                            Elektronische Wegfahrsperre, Zentralverriegelung mit Funkfernbedienung Scheibenbremsen vorne
+                            und
                             hinten...
                             <a href="#" class="hero__item-text-link">Mehr</a>
                         </p>
                     </div>
                 </li>
             </ul>
+            <button class="add-button">
+                <img src="./images/icons/icon-plus.svg" alt="icon-plus" class="icon-plus">
+            </button>        
         </section>
     </main>
 
     <footer class="footer">
         <div class="footer__buttons">
-            <button class="footer__button-continue btn">
+            <button class="footer__button-continue btn" type="button">
                 <img src="./images/icons/icon-edit.svg" alt="icon-edit" class="icon-edit">
                 Weiter konfigurieren
             </button>
-            <button class="footer__button-calc btn">
+            <button class="footer__button-calc btn" type="button">
                 <img src="./images/icons/icon-money.svg" alt="icon-money" class="icon-money">
                 Finanzierungsrechner
             </button>
-            <button class="footer__button-request btn">Angebot anfordern</button>
+            <button class="footer__button-request btn" type="button" data-modal-open>Angebot anfordern</button>
         </div>
+        <button class="chat-button">
+            <img src="./images/icons/icon-chat.svg" alt="icon-chat" class="iocn-chat">
+        </button>    
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <form action="#" class="modal__form">
+                <h3 class="modal__title">Wir senden Ihnen die Datei per E-Mail</h3>
+                <div class="modal__wrapper">
+                    <input type="text" name="modal-firstname" class="modal__input" placeholder="Vorname"/>
+                    <input type="text" name="modal-lastname" class="modal__input" placeholder="Nachname"/>
+                    <input type="tel" name="modal-tel" class="modal__input" placeholder="Telefon"/>
+                    <input type="email" name="modal-email" class="modal__input" placeholder="E-mail"/>
+                </div>
+                <p class="modal__content">
+                    <img src="./images/icons/icon-check.svg" alt="icon-check" class="icon-check">
+                    Ja, ich habe die Datenschutzerklärung zur Kenntnis genommen und bin damit
+                    einverstanden, dass die von mir angegebenen Daten elektronisch erhoben und gespeichert werden. Meine
+                    Daten werden dabei nur streng zweckgebunden zur Bearbeitung und Beantwortung meiner Anfrage benutzt
+                    und nicht an Dritte weitergegeben. Mit dem Absenden des Kontaktformulars erkläre ich mich mit der
+                    Verarbeitung einverstanden.
+                </p>
+                <div class="modal__buttons">
+                    <button class="modal__button-cancel btn" type="button" data-modal-close>Abbrechen</button>
+                    <button class="modal__button-submit btn" type="submit">Senden</button>
+                </div>
+            </form>
+        </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>
+    <script src="./js/modal.js"></script>
+
 
 </body>
 

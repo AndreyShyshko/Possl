@@ -5,10 +5,13 @@
   --dark-color: #000000;
   --grey-color: #62687F;
   --border-color-light: #DFE2ED;
+  --secondary-color-border: #3C888A;
   --badge-color: #CE5555;
+  --placeholder-color: #9DA3B8;
 }
 
 body {
   position: relative;
   font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
 }
