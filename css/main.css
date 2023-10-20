@@ -110,6 +110,7 @@ a {
 }
 
 .modal__input {
+  font-size: 18px;
   flex-basis: calc((100% - 30px) / 2);
   height: 51px;
   padding: 15px 30px;
