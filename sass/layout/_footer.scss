@@ -1,5 +1,5 @@
 .footer {
-    padding: 20px 0;
+    padding: 20px;
     border-top: 1px solid var(--border-color-light);
 
     &__buttons {
@@ -31,5 +31,39 @@
         color: var(--light-color);
         background-color: var(--main-color);
         border: none;
+    }
+}
+
+@media screen and (max-width: 1230px) {
+    .footer {
+    
+        &__buttons {
+            gap: 15px;
+    
+            & button {
+                font-size: 16px;
+            }
+            & img {
+                width: 25px;
+                vertical-align: -7px;
+            }
+        }
+    }    
+}
+
+@media screen and (max-width: 767px) {
+    .footer {
+        border: none;
+        padding-top: 0;
+
+        &__buttons {
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+
+            & button {
+                width: 260px;
+            }
+        }
     }
 }

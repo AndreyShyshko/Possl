@@ -10,9 +10,6 @@
         }
     }
     .swiper-slide-active {
-        width: 100%;
-        transform: scale(1);
-        transition: all 1s ease;
         .hero__item-image {
             transform: scale(1.4);
             transition: all 1s ease;
@@ -20,9 +17,26 @@
     }
 
     .swiper-slide-prev {
-        transform: translateX(150px);
+        transform: translateX(20%);
     }
     .swiper-slide-next {
-        transform: translateX(-150px);
+        transform: translateX(-20%);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .swiper {
+        .swiper-slide-active {
+            .hero__item-image {
+                transform: scale(1.2);
+            }
+        }
+    
+        .swiper-slide-prev {
+            transform: translateX(0);
+        }
+        .swiper-slide-next {
+            transform: translateX(0);
+        }    
     }
 }
