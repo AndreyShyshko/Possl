@@ -1,6 +1,12 @@
 .footer {
     padding: 20px;
     border-top: 1px solid var(--border-color-light);
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    bottom: 0vh;
+    width: 100%;
+    background-color: var(--light-color);
 
     &__buttons {
         display: flex;
@@ -36,6 +42,7 @@
 
 @media screen and (max-width: 1230px) {
     .footer {
+        position: static;
     
         &__buttons {
             gap: 15px;
